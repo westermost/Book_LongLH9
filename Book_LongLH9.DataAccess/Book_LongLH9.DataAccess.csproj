@@ -4,4 +4,17 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Book_LongLH9.Models\Book_LongLH9.Models.csproj" />
+    <ProjectReference Include="..\Book_LongLH9.Ultility\Book_LongLH9.Ultility.csproj" />
+  </ItemGroup>
+
 </Project>

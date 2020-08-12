@@ -1,6 +1,6 @@
 using System;
 
-namespace Book_LongLH9.Models
+namespace Book_LongLH9.Models.ViewModels
 {
     public class ErrorViewModel
     {

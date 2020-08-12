@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Book_LongLH9.Data
+namespace Book_LongLH9.DataAccess.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
