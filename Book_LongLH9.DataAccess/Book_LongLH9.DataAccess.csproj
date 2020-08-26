@@ -14,4 +14,8 @@
     <ProjectReference Include="..\Book_LongLH9.Ultility\Book_LongLH9.Ultility.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repository\" />
+    <Folder Include="Repository\IRepository\" />
+  </ItemGroup>
 </Project>
