@@ -12,6 +12,8 @@ using Book_LongLH9.DataAccess.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Book_LongLH9.DataAccess.Repository.IRepository;
+using Book_LongLH9.DataAccess.Repository;
 
 namespace Book_LongLH9
 {
@@ -32,6 +34,7 @@ namespace Book_LongLH9
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
         }
